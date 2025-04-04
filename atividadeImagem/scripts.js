@@ -48,6 +48,7 @@ async function buscarEndereco() {
     console.log("buscando endereço...");
     const resposta = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
     const dados = resposta.json();
+    console.log("enedereço encontrado: ", dados);
   } catch (error) {
     console.log(error);
   }
